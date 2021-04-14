@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+  <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+</style>
+</head>
+<div class="jumbotron">
+  <h3><font color="navy"> Submit Weekly Sales Data</font></h3>
+
+
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+
+        {{form.emp_id.label}} <br> {{form.emp_id(size=10)}}  <br> <br>
+      {{form.yr.label}}       <br>   {{form.yr(size=10)}}  <br><br>
+      {{form.wk.label }} <br> {{form.wk(size=10)}} <br><br>
+      {{form.quarter.label}} <br> {{form.quarter(size=10)}} <br><br>
+      {{form.prod_code.label}} <br> {{form.prod_code(size=10)}} <br><br>
+      {{form.prod_qty.label}} <br> {{form.prod_qty(size=10)}} <br><br>
+      {{form.esp.label}}  <br>{{form.esp(size=10)}} <br><br>
+      {{form.esp_num.label}}<br>  {{form.esp_num(size=10)}} <br><br>
+      {{form.submit()}}
+    </form><br>
+</div><br>
+{% endblock %}
+<br>

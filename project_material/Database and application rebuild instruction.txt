@@ -1,0 +1,65 @@
+Goto  Atom/pycharm
+
+1) create virtual environment
+
+2) install below packages
+
+pip install flask_sqlalchemy
+pip install flask_migrate
+pip install wtforms
+pip install os
+pip install pandas
+pip install flask_wtf
+pip install wtforms_sqlalchemy.fiels
+pip install wtforms_sqlalchemy
+pip install sqlalchemy
+pip install cryptography
+pip install pymysql
+
+
+3) Goto mysql workbench
+create database mayekar_py_capstone;
+
+4) update TractorTEK.py in project folder with correct username and password of the database 
+
+"app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:Riddhi@975@localhost:3306/mayekar_py_capstone""
+
+5) Goto  Atom/pycharm run below script to generate schema
+
+python schemacreate.py
+
+This will create five tables in the database
+
+1) sales_team
+2) product
+3) quarter_price
+4) sales
+5) sales_history
+
+6) execute python script
+
+python TractorTEK.py 
+
+Goto browser with below url
+
+http://127.0.0.1:5000/
+
+(Use Below tab to perform backup restore sequentially)
+
+Restore Backup 
+1) Restore Sales Team Data
+2) Restore Product Data
+3) Restore Quarterly Price
+4) Restore Sales History Data   
+
+(Use Below tab to perform weekly sales order submission)
+
+Submit Weekly Sales 
+
+
+
+
+
+
+	
+	

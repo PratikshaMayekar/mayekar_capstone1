@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<!doctype html>
+<html>
+  <head>
+    <title>Restore Sales data</title>
+    <style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+  </style>
+  </head>
+  <body>
+    <br>
+    <br>
+    <h2><font color="navy">Restore Sales History data <font></h2>
+    <br>
+    <form method="POST" action="" enctype="multipart/form-data">
+      <br>
+      <p><input type="file" name="file"></p>
+      <br>
+      <p><input type="submit" value="Submit")"></p>
+    </form>
+  </body>
+</html>
+{% endblock %}
